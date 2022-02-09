@@ -8,7 +8,7 @@ class Conf
         'hostname' => 'localhost',
         // A l'IUT, vous avez une BDD nommee comme votre login
         // Sur votre machine, vous devrez creer une BDD
-        'database' => 'tuto_mcv',
+        'database' => 'tuto_mvc',
         // A l'IUT, c'est votre login
         // Sur votre machine, vous avez surement un compte 'root'
         'login' => 'phpmyadminGD',
