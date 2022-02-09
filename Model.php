@@ -1,28 +1,20 @@
 <?php
 require_once 'Conf.php';
-phpinfo();
+// phpinfo();
+
 class Model
 {
     static private $pdo = NULL;
 
-    // static $hostname = Conf::getHostname();
-    // static $database_name = Conf::getDatabase();
-    // static $login = Conf::getLogin();
-    // static $password = Conf::getPassword();
-
-    static $hostname = "localhost";
-    static $database_name = "tuto_mcv";
-    static $login = "phpmyadminGD";
-    static $password = "0000";
-
     static public function init()
     {
-
+        $hostname = Conf::getHostname();
+        $database_name = Conf::getDatabase();
+        $login = Conf::getLogin();
+        $password = Conf::getPassword();
 
         try {
-            echo "fo5";
-            self::$pdo = new PDO('mysql:host=localhost;dbname=tuto_mvc', 'phpmyadminGD', '0000');
-            echo "fo6";
+            self::$pdo = new PDO("mysql:host=$hostname;dbname=$database_name", $login, $password);
         } catch (PDOException $e) {
             printf("Échec de la connexion : %s\n", $e->getMessage());
             die();
