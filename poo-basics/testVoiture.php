@@ -10,10 +10,25 @@
 
 <body>
     <?php
-    require_once 'Voiture.php';
 
+
+    // --- Test de la Classe Voiture
+    require_once 'Voiture.php';
     $vehicule1 = new Voiture("Dacia", "Rouge", "152548");
     $vehicule1->afficher();
+
+
+
+    // --- Test de la Classe Utilisateur
+
+    require_once 'Utilisateur.php';
+    $utilisateur1 = new Utilisateur("Kali", "Tom", "152548");
+    $utilisateur1->afficher();
+
+
+
+
+
     ?>
 
 
