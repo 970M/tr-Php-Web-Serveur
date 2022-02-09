@@ -41,3 +41,16 @@ foreach ($tab_array as $key => $value) {
         echo "$key - $value <br>";
     }
 }
+
+// --- FETCH_CLASS --- 
+// créer une instance de la classe Voiture, 
+// écrire les attributs correspondants au champs de la BDD puis
+// appeler le constructeur sans arguments
+
+// 
+
+
+
+
+$rep->setFetchMode(PDO::FETCH_CLASS, 'Voiture');
+$tab_voit = $rep->fetchAll();
