@@ -11,3 +11,5 @@ https://romainlebreton.github.io/ProgWeb-CoteServeur/tutorials/tutorial2.html
 #### Se connecter à mysql
 
     mysql -u phpmyadminGD -p 0000
+
+https://jcrozier.developpez.com/tutoriels/web/php/design-classe/
