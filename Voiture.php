@@ -68,23 +68,10 @@ class Voiture
     public function afficher()
     {
         echo <<< EOT
-        <h2>Marque : $this->marque</h2>
-        <h2>Couleur : $this->couleur</h2>
-        <h2>Immatriculation : $this->immatriculation</h2>
+        <p>Marque : $this->marque</p>
+        <p>Couleur : $this->couleur</p>
+        <p>Immatriculation : $this->immatriculation</p>
+        </br>
     EOT;
     }
 }
-
-
-// $vehicule1 = new Voiture("Dacia", "Rouge", "152548");
-// $vehicule1->afficher();
-
-// // ---
-// $prenom = "Helmut";
-// echo <<< EOT
-// Texte à afficher
-// sur plusieurs lignes
-// avec caractères spéciaux \t \n
-//  et remplacement de variables $prenom
-// les caractères suivants passent : " ' $ / \ ;
-// EOT;
