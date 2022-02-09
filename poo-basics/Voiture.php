@@ -31,7 +31,7 @@ class Voiture
     // un setter
     public function setCouleur($m)
     {
-        $this->ouleur = $m;
+        $this->couleur = $m;
     }
 
     // --- Immatriculation ---

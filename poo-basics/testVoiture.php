@@ -10,7 +10,7 @@
 
 <body>
     <?php
-    require_once 'Voiture-poo.php';
+    require_once 'Voiture.php';
 
     $vehicule1 = new Voiture("Dacia", "Rouge", "152548");
     $vehicule1->afficher();
