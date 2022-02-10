@@ -22,7 +22,6 @@ foreach ($tab_obj as $key => $value) {
     }
 }
 
-
 // --- FETCH_TAB --- Qu'est ce que ça change ?
 echo '<h2>FETCH_TAB</h2>';
 $rep_array = $pdo->query("SELECT * FROM voiture");
@@ -57,4 +56,11 @@ $tab_voit = $rep_class->fetchAll();
 foreach ($tab_voit as $value) {
 
     $value->afficher();
+}
+
+
+// --- Lire toute la base de donnée
+$voiture_tab = Voiture::getAllVoitures();
+foreach ($voiture_tab as $voiture) {
+    $voiture->afficher();
 }

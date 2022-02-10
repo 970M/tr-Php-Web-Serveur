@@ -1,4 +1,5 @@
 <?php
+require_once "Model.php";
 
 class Voiture
 {
@@ -73,5 +74,15 @@ class Voiture
         <p>Immatriculation : $this->immatriculation</p>
         </br>
     EOT;
+    }
+
+    // Renvoyer le tableau des voitures de la BDD 
+    public function getAllVoitures()
+    {
+        echo '<h2>getAllVoitures</h2>';
+        $pdo = Model::getPDO();
+        $rep_class = $pdo->query("SELECT * FROM voiture");
+        $rep_class->setFetchMode(PDO::FETCH_CLASS, 'Voiture');
+        return $rep_class->fetchAll();
     }
 }
