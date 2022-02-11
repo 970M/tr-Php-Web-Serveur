@@ -25,3 +25,5 @@ Done
 #### TD3
 
 https://romainlebreton.github.io/ProgWeb-CoteServeur/tutorials/tutorial3.html
+
+Exercice 1
