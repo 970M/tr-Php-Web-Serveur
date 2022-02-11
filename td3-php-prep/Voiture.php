@@ -103,4 +103,29 @@ class Voiture
             return false;
         return $tab_voit[0];
     }
+
+
+    public function save()
+    {
+        $sql = "INSERT INTO voiture (marque, couleur, immatriculation) VALUES (:marque_tag, :couleur_tag, :immatriculation_tag)";
+
+        // Préparation de la requête
+        $req_prep = Model::getPDO()->prepare($sql);
+
+        $values = array(
+            "marque_tag" => $this->marque,
+            "couleur_tag" => $this->couleur,
+            "immatriculation_tag" => $this->immatriculation,
+            //nomdutag => valeur, ...
+        );
+        // On donne les valeurs et on exécute la requête	 
+        try {
+            $req_prep->execute($values);
+        } catch (Exception $e) {
+            die('Erreur : ' . $e->getMessage());
+        }
+
+
+        //var_dump($req_prep);
+    }
 }

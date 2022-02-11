@@ -14,3 +14,13 @@ foreach ($voitures_tab as $voiture) {
 // --- test getVoitureByImmat()
 $immats_tab = Voiture::getVoitureByImmat("12345678");
 $immats_tab->afficher();
+
+
+// --- test save()
+echo "<h2>Test save()</h2>";
+$vehicule1 = new Voiture();
+$vehicule1->setMarque("Lada");
+$vehicule1->setCouleur("Violette");
+$vehicule1->setImmatriculation("48526871");
+$vehicule1->save();
+$vehicule1->afficher();
