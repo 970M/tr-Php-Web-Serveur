@@ -15,3 +15,13 @@ https://romainlebreton.github.io/ProgWeb-CoteServeur/tutorials/tutorial2.html
     USE tuto_mvc
 
 https://jcrozier.developpez.com/tutoriels/web/php/design-classe/
+
+#### TD2
+
+https://romainlebreton.github.io/ProgWeb-CoteServeur/tutorials/tutorial2.html
+
+Done
+
+#### TD3
+
+https://romainlebreton.github.io/ProgWeb-CoteServeur/tutorials/tutorial3.html
