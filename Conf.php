@@ -2,6 +2,8 @@
 class Conf
 {
 
+    // --- Attributs de la classe
+
     static private $databases = array(
         // Le nom d'hote est webinfo a l'IUT
         // ou localhost sur votre machine
@@ -16,6 +18,19 @@ class Conf
         // Sur votre machine personelle, vous avez creez ce mdp a l'installation
         'password' => '0000'
     );
+
+    // la variable debug est un boolean
+    static private $debug = True;
+
+    // --- Méthodes de la classe
+    static public function getDebug()
+    {
+        return self::$debug;
+    }
+    static public function setDebug($b)
+    {
+        self::$debug = $b;
+    }
 
     static public function getLogin()
     {

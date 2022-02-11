@@ -12,4 +12,6 @@ https://romainlebreton.github.io/ProgWeb-CoteServeur/tutorials/tutorial2.html
 
     mysql -u phpmyadminGD -p 0000
 
+    USE tuto_mvc
+
 https://jcrozier.developpez.com/tutoriels/web/php/design-classe/
