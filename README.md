@@ -33,6 +33,7 @@ Exercice 4
 Exercice 5
 Exercice 6
 Exercice 7 : testFindUtil.php
+Exemple d'injection SQL
 
 ##### Tables SQL :
 
