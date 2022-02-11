@@ -93,8 +93,12 @@ class Voiture
             //nomdutag => valeur, ...
         );
         // On donne les valeurs et on exécute la requête	 
-        $req_prep->execute($values);
 
+        try {
+            $req_prep->execute($values);
+        } catch (Exception $e) {
+            die('Erreur : ' . $e->getMessage());
+        }
         // On récupère les résultats comme précédemment
         $req_prep->setFetchMode(PDO::FETCH_CLASS, 'Voiture');
         $tab_voit = $req_prep->fetchAll();
