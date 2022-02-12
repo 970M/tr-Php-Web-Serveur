@@ -1,3 +1,7 @@
+#### Logs / Debug
+
+/var/log/apache2
+
 https://romainlebreton.github.io/ProgWeb-CoteServeur/tutorials/tutorial2.html
 
 #### Lancer mysql
@@ -13,8 +17,6 @@ https://romainlebreton.github.io/ProgWeb-CoteServeur/tutorials/tutorial2.html
     mysql -u phpmyadminGD -p 0000
 
     USE tuto_mvc
-
-https://jcrozier.developpez.com/tutoriels/web/php/design-classe/
 
 ##### Tables SQL :
 
@@ -55,6 +57,8 @@ PRIMARY KEY (`immatriculation`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3
 
 #### TD1
+
+https://jcrozier.developpez.com/tutoriels/web/php/design-classe/
 
 Done
 
