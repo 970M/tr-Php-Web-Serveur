@@ -16,25 +16,6 @@ https://romainlebreton.github.io/ProgWeb-CoteServeur/tutorials/tutorial2.html
 
 https://jcrozier.developpez.com/tutoriels/web/php/design-classe/
 
-#### TD2
-
-https://romainlebreton.github.io/ProgWeb-CoteServeur/tutorials/tutorial2.html
-
-Done
-
-#### TD3
-
-https://romainlebreton.github.io/ProgWeb-CoteServeur/tutorials/tutorial3.html
-
-Exercice 1
-Exercice 2
-Exercice 3
-Exercice 4
-Exercice 5
-Exercice 6
-Exercice 7 : testFindUtil.php
-Exemple d'injection SQL
-
 ##### Tables SQL :
 
 CREATE TABLE `passager` (
@@ -72,3 +53,32 @@ CREATE TABLE `voiture` (
 `couleur` varchar(12) NOT NULL,
 PRIMARY KEY (`immatriculation`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3
+
+#### TD1
+
+Done
+
+#### TD2
+
+https://romainlebreton.github.io/ProgWeb-CoteServeur/tutorials/tutorial2.html
+
+Done
+
+#### TD3
+
+https://romainlebreton.github.io/ProgWeb-CoteServeur/tutorials/tutorial3.html
+
+Exercice 1
+Exercice 2
+Exercice 3
+Exercice 4
+Exercice 5
+Exercice 6
+Exercice 7 : testFindUtil.php
+Exemple d'injection SQL
+
+#### TD4
+
+https://romainlebreton.github.io/ProgWeb-CoteServeur/tutorials/tutorial4.html
+
+Exercice 4
