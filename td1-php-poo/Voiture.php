@@ -65,17 +65,3 @@ class Voiture
     EOT;
     }
 }
-
-
-// $vehicule1 = new Voiture("Dacia", "Rouge", "152548");
-// $vehicule1->afficher();
-
-// // ---
-// $prenom = "Helmut";
-// echo <<< EOT
-// Texte à afficher
-// sur plusieurs lignes
-// avec caractères spéciaux \t \n
-//  et remplacement de variables $prenom
-// les caractères suivants passent : " ' $ / \ ;
-// EOT;

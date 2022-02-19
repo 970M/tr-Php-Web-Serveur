@@ -86,3 +86,26 @@ Exemple d'injection SQL
 https://romainlebreton.github.io/ProgWeb-CoteServeur/tutorials/tutorial4.html
 
 Exercice 4
+
+#### Utiliser sqlite au lieu de mysql:
+
+    dir="sqlite:/[YOUR-PATH]/combadd.sqlite";
+    $dbh  = new PDO($dir) or die("cannot open the database");
+    $query =  "SELECT * FROM combo_calcs WHERE options="easy"";
+    foreach ($dbh->query($query) as $row)
+    {
+        echo $row[0];
+    }
+    $dbh = null; //This is how you close a PDO connection
+
+
+    <?php
+    try{
+        $pdo = new PDO('sqlite:'.dirname(__FILE__).'/database.sqlite');
+        $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // ERRMODE_WARNING | ERRMODE_EXCEPTION | ERRMODE_SILENT
+    } catch(Exception $e) {
+        echo "Impossible d'accéder à la base de données SQLite : ".$e->getMessage();
+        die();
+    }
+    ?>
