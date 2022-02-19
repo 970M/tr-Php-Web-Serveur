@@ -1,22 +1,14 @@
+# Programmation Web - Côté Serveur
+
+## Cours à l’IUT de Montpellier - 2ème année
+
+Mots clés : PHP, MVC, MySQL
+
 #### Logs / Debug
 
 /var/log/apache2
 
 https://romainlebreton.github.io/ProgWeb-CoteServeur/tutorials/tutorial2.html
-
-#### Lancer mysql
-
-    sudo /etc/init.d/mysql start
-
-#### Lancer apache server
-
-    sudo systemctl start apache2
-
-#### Se connecter à mysql
-
-    mysql -u phpmyadminGD -p 0000
-
-    USE tuto_mvc
 
 ##### Tables SQL :
 
@@ -87,7 +79,7 @@ https://romainlebreton.github.io/ProgWeb-CoteServeur/tutorials/tutorial4.html
 
 Exercice 4
 
-#### Utiliser sqlite au lieu de mysql:
+**Utiliser sqlite au lieu de mysql:**
 
     dir="sqlite:/[YOUR-PATH]/combadd.sqlite";
     $dbh  = new PDO($dir) or die("cannot open the database");
